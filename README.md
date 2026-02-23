@@ -1,20 +1,22 @@
-# OpenClaw Scripts
+# 🐍 OpenClaw Scripts
 
-**Production-ready Python scripts for OpenClaw automation**
+Production-ready Python scripts for OpenClaw automation.
 
----
+## Scripts
 
-## Scripts Included
+### lead_scraper.py
+Find and scrape business leads from directories.
+```bash
+python lead_scraper.py
+```
 
-| Script | What It Does |
-|--------|--------------|
-| `lead_scraper.py` | Find and scrape business leads |
-| `email_sender.py` | Send personalized cold emails |
-| `data_enricher.py` | Enrich leads with extra data |
+### email_sender.py
+Send personalized cold emails with tracking.
+```bash
+python email_sender.py
+```
 
----
-
-## Quick Start
+## Setup
 
 ```bash
 # Install dependencies
@@ -22,31 +24,16 @@ pip install requests beautifulsoup4
 
 # Configure
 cp config.example.py config.py
-# Edit with your API keys
-
-# Run
-python lead_scraper.py
-python email_sender.py
+# Add your API keys
 ```
 
----
-
 ## Requirements
-
 - Python 3.8+
-- API keys for:
-  - Email sender (Gmail SMTP or SendGrid)
-  - Enrichment (optional)
-
----
+- SMTP access (Gmail app password or SendGrid)
 
 ## Legal
-
-⚠️ Use responsibly. Follow:
-- CAN-SPAM Act (USA)
-- GDPR (Europe)
-- Local email laws
+Use responsibly. Follow CAN-SPAM, GDPR, and local email laws.
 
 ---
 
-*From Ataski - We run these daily.*
+**Built by [@ataski](https://x.com/ataski_)**
